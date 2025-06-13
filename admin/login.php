@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
         $_SESSION['password'] = $valid_users[$username];
-        header('Location: dashboard.php');
+        header('Location: dashboard/dashboard.php');
         exit;
     } else {
         $error = 'اسم المستخدم أو كلمة المرور غير صحيحة';
